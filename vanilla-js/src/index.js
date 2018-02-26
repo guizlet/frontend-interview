@@ -1,6 +1,3 @@
-import './index.css';
-import './LearnMode.css';
-
 const TERMS = [
 	{
 		id: 1,
@@ -15,8 +12,8 @@ const TERMS = [
 	{
 		id: 3,
 		word: 'California',
-		definition: 'San Francisco',
+		definition: 'Sacramento',
 	},
 ];
 
-// TODO: Write Learn code here
+// TODO: Write code here
