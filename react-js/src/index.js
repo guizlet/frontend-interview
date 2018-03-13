@@ -1,9 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import { render } from 'react-dom';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+import LearnMode from './LearnMode';
+
+const TERMS = [
+  {
+    id: 1,
+    word: 'Nebraska',
+    definition: 'Lincoln',
+  },
+  {
+    id: 2,
+    word: 'Massachusetts',
+    definition: 'Boston',
+  },
+  {
+    id: 3,
+    word: 'California',
+    definition: 'Sacramento',
+  },
+];
+
+render(
+  <LearnMode terms={TERMS} />,
+  document.querySelector('#root')
 );
