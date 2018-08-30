@@ -17,7 +17,6 @@ angular
     $locationProvider.hashPrefix("");
   })
   .controller("LearnModeCtrl", $scope => {
-    $scope.baseUrl = "/";
     $scope.terms = [
       {
         id: 1,
