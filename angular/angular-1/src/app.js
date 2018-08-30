@@ -1,23 +1,24 @@
 import angular from "angular";
 import ngRoute from "angular-route";
 
-import html from "./views/index.html";
-
-// Controllers
 angular
   .module("LearnMode", ["ngRoute"])
-  .config($routeProvider => {
+  .config(($routeProvider, $locationProvider) => {
     $routeProvider
       .when("/", {
-        templateUrl: html,
+        template: require("./views/index.html"),
         controller: "LearnModeCtrl"
       })
       .otherwise({
         redirectTo: "/"
       });
+
+    $locationProvider.html5Mode(true);
+    $locationProvider.hashPrefix("");
   })
   .controller("LearnModeCtrl", $scope => {
-    const TERMS = [
+    $scope.baseUrl = "/";
+    $scope.terms = [
       {
         id: 1,
         word: "Nebraska",
@@ -35,5 +36,5 @@ angular
       }
     ];
 
-    // code here
+    // your code here
   });
