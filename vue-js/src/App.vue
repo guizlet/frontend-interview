@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <LearnMode :terms="terms" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LearnMode from './components/LearnMode.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    LearnMode
+  },
+  data() {
+    return {
+      terms: [
+        {
+          id: 1,
+          word: 'Nebraska',
+          definition: 'Lincoln',
+        },
+        {
+          id: 2,
+          word: 'Massachusetts',
+          definition: 'Boston',
+        },
+        {
+          id: 3,
+          word: 'California',
+          definition: 'Sacramento',
+        },
+      ]
+    };
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
 }
 </style>
