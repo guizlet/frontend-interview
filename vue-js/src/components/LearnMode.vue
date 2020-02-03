@@ -1,10 +1,3 @@
-<script>
-export default {
-  name: 'LearnMode',
-  props: ['terms']
-}
-</script>
-
 <template>
   <div class="LearnMode">
     <h1 class="LearnMode-prompt">{{terms[0].word}}</h1>
@@ -16,6 +9,13 @@ export default {
     </form>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'LearnMode',
+  props: ['terms']
+}
+</script>
 
 <style scoped>
   .LearnMode {
