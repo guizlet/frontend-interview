@@ -8,4 +8,4 @@
 
 #### Requirements
 
-Node >= 6 and npm >= 3 recommended
+Node >= 8 and npm >= 5 recommended
