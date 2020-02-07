@@ -25,9 +25,11 @@ export class LearnModeComponent implements OnInit {
     }
   ];
 
+  // your code here
+
+
   constructor() {}
 
   ngOnInit() {}
 
-  // your code here
 }
