@@ -1,19 +1,9 @@
 # vue-js
 
-## Project setup
-```
-yarn install
-```
+### How to run this app
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+1. `npm install` or `yarn install`
+2. `npm serve` or `yarn serve`
+3. Visit http://localhost:5678 and make sure the page loads!
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

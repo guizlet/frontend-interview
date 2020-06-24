@@ -1,4 +1,5 @@
 <template>
+  <!-- Your HTML changes here -->
   <div class="LearnMode">
     <h1 class="LearnMode-prompt">{{terms[0].word}}</h1>
     <form class="LearnMode-form">
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+// Your JS changes here
 export default {
   name: 'LearnMode',
   props: ['terms']
@@ -18,6 +20,7 @@ export default {
 </script>
 
 <style scoped>
+/* Your CSS changes here */
   .LearnMode {
     padding: 20px;
   }
