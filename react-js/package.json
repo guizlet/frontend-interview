@@ -3,16 +3,21 @@
   "version": "0.1.2",
   "private": true,
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
     "parcel-bundler": "^1.12.4"
   },
+  "resolutions": {
+    "minimist": "^0.2.1",
+    "node-forge": "^0.10.0"
+  },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "parcel src/index.html"
   },
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
