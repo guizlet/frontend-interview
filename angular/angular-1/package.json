@@ -6,14 +6,19 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "babel-plugin-angularjs-annotate": "^0.9.0",
-    "parcel-bundler": "https://github.com/parcel-bundler/parcel.git#304c860"
+    "@babel/core": "^7.12.3",
+    "babel-plugin-angularjs-annotate": "^0.10.0",
+    "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "angular": "^1.7.3",
-    "angular-route": "^1.7.3"
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2"
+  },
+  "resolutions": {
+    "node-forge": "^0.10.0"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "parcel src/index.html"
   }
 }
