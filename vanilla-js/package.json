@@ -7,7 +7,11 @@
     "babel-preset-env": "^1.6.1",
     "parcel-bundler": "^1.12.4"
   },
+  "resolutions": {
+    "node-forge": "^0.10.0"
+  },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "parcel src/index.html"
   }
 }
