@@ -3,10 +3,15 @@
   "version": "0.1.1",
   "private": true,
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
-    "parcel-bundler": "^1.6.2"
+    "parcel-bundler": "^1.12.4"
+  },
+  "resolutions": {
+    "node-forge": "^0.10.0"
   },
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "start": "parcel src/index.html"
   }
 }
